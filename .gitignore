@@ -3,3 +3,5 @@
 db.sqlite3
 ecc_app/__pycache__/__init__.cpython-39.pyc
 *.pyc
+Scripts
+Lib
