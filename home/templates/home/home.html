@@ -1,5 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>content would go here</h1>
+    <h1>Announcements</h1>
+    {% for announcement in announcements %}
+    <div class="row">
+        <div class="card bg-secondary text-white">
+            <div class="row pt-2 mb-2">
+                <div class="col-sm-6 d-flex align-items-center justify-content-start">
+                    {{announcement.title}}
+                </div>
+                <div class="col-sm-6 d-flex align-items-center justify-content-end">
+                    {{anouncement.created}}
+                </div>
+            </div>
+            <div class="card-body">{{announcement.text}}</div>
+        </div>
+    </div>
+    {% endfor %}
 {% endblock %}

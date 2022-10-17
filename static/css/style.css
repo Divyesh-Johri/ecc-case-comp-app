@@ -1,0 +1,21 @@
+.navbar a{
+    display: block;
+    padding: 10px 20px;
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+footer {
+    background-color: #1e222f;
+}
+.navbar a:hover {
+    opacity: 0.6;
+    background: transparent;
+    -webkit-transition: opacity 200ms ease;
+    -moz-transition: opacity 200ms ease;
+    -ms-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+}
