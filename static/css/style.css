@@ -19,3 +19,14 @@ footer {
     -ms-transition: opacity 200ms ease;
     transition: opacity 200ms ease;
 }
+.logo {
+    height: 90px;
+    margin: auto;    
+    display: block;
+}
+.btn-primary {
+    background-color: rgb(30, 34, 47) !important;
+}
+.btn-light {
+    background-color: rgb(255, 255, 255) !important;
+}

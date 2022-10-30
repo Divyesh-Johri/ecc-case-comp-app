@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Team Name</h1>
+    <div class="row mt-4 pt-4 mb-4 pb-4">
+    {% for person in team %}
+    <div class="col-sm-2">
+        <div class="card">
+            <div class="card-header">{{person.name}}</div>
+            <div class="card-body">
+                <div class="row justify-content-center">{{person.email}}</div>
+                <div class="row justify-content-center">{{person.major}}</div>
+                <div class="row justify-content-center">{{person.year}}</div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+
+    <div class="row mt-4 pt-4 mb-4 pb-4">
+        <div class="col-sm-2">
+            <div class="card user" style="font-family: brandon-grotesque, sans-serif; color: #1e222f;;">
+                <div class="card-header">Name</div>
+                <div class="card-body">
+                    <div class="row justify-content-center mb-2">Email</div>
+                    <div class="row justify-content-center mb-2">Major</div>
+                    <div class="row justify-content-center mb-2">Year</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
